@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Inclusive Sans', sans-serif;
+    background: linear-gradient(70deg, rgba(255, 238, 112, 0.995), rgb(191, 169, 0));
+    font-size: 16px; /* Ajusta el tamaño de fuente base */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em; /* Tamaño de fuente para encabezados */
+}
+
+.Con-2 {
+    display: none;
+}
+
+canvas {
+    display: block;
+    max-width: 100%; /* Asegura que el canvas no se desborde en dispositivos pequeños */
+    height: auto;
+}
+
+.Contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.Texto {
+    text-align: center;
+}
+
+.Texto h2 {
+    font-size: 2em; /* Tamaño de fuente para el título */
+}
+
+.Button {
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size: 1.2em; /* Tamaño de fuente para botones */
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: greenyellow;
+    color: black;
+    border: 2px solid green;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.Button:hover {
+    transform: scale(1.1);
+    border-radius: 14px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    background-color: white;
+}
+
+.Contenedor-Binicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Con-Emergente {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+
+.cua {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Ajusta el ancho del cuadro emergente */
+    max-width: 400px; /* Establece un ancho máximo para pantallas grandes */
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: aparecer 0.5s ease-out;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Reducir el tamaño de fuente para encabezados en dispositivos pequeños */
+    }
+
+    .Button {
+        font-size: 1em; /* Reducir el tamaño de fuente para botones en dispositivos pequeños */
+        padding: 8px 16px; /* Ajustar el relleno para dispositivos más pequeños */
+    }
+
+    .Texto h2 {
+        font-size: 1.5em; /* Reducir el tamaño de fuente para el título en dispositivos pequeños */
+    }
+}
